@@ -5,7 +5,7 @@ dotenv.config();
 
 const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
-  PORT: z.coerce.number().default(5000),
+  PORT: z.coerce.number().default(5001),
   MONGODB_URI: z.string().default('mongodb://127.0.0.1:27017/devos'),
   JWT_SECRET: z.string().default('devos-super-secret-development-jwt-key-2026'),
   JWT_EXPIRES_IN: z.string().default('7d'),
